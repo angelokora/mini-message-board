@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1= title
+  p Add a new message by filling the form below
+  form(class='class', method='post', action='/new')
+    label(for='user') Author:
+    br
+    input(type='text', name='user')
+    br
+    label(for='text') Message:
+    br
+    textarea(name="text", cols="30", rows="10")
+    br
+    button(type="submit") Save
